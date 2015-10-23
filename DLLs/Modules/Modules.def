@@ -1,0 +1,6 @@
+; Modules.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Modules"
+
+EXPORTS
+    ; Explicit exports can go here

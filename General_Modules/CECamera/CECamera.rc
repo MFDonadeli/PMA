@@ -1,0 +1,178 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APPICON             ICON                    "CECamera.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG1 DIALOG  0, 0, 117, 122
+STYLE DS_SETFONT | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Initial Directory:",IDC_CHECK_INITIAL_DIR,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,5,5,105,10
+    EDITTEXT        IDC_INITIAL_DIR,5,15,105,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Default File Name:",IDC_CHECK_DEFAULT_FILE_NAME,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,5,27,105,10
+    EDITTEXT        IDC_DEFAULT_FILE_NAME,5,37,105,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Title:",IDC_CHECK_TITLE,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,5,49,105,10
+    EDITTEXT        IDC_TITLE,5,59,105,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Resolution (Width x Height):",IDC_CHECK_RESOLUTION,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,5,73,105,10
+    EDITTEXT        IDC_RESOLUTION_WIDTH,5,83,45,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    CTEXT           "x",IDC_STATIC,50,83,15,10,NOT WS_VISIBLE
+    EDITTEXT        IDC_RESOLUTION_HEIGHT,61,83,45,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    CONTROL         "Video Time Limit:",IDC_CHECK_VIDEO_TIME_LIMIT,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,5,96,105,10
+    EDITTEXT        IDC_VIDEO_TIME_LIMIT,5,105,105,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MENU MENU 
+BEGIN
+    POPUP "Opções"
+    BEGIN
+        POPUP "Mode"
+        BEGIN
+            MENUITEM "Still",                       IDM_MODE_STILL
+            MENUITEM "Video Only",                  IDM_MODE_VIDEOONLY
+            MENUITEM "Video with Audio",            IDM_MODE_VIDEOWITHAUDIO
+        END
+        POPUP "Still Quality"
+        BEGIN
+            MENUITEM "Default",                     IDM_STILLQUALITY_DEFAULT
+            MENUITEM "Low",                         IDM_STILLQUALITY_LOW
+            MENUITEM "Normal",                      IDM_STILLQUALITY_NORMAL
+            MENUITEM "High",                        IDM_STILLQUALITY_HIGH
+        END
+        POPUP "Video Types"
+        BEGIN
+            MENUITEM "All",                         IDM_VIDEOTYPES_ALL
+            MENUITEM "Standard",                    IDM_VIDEOTYPES_STANDARD
+            MENUITEM "Messaging",                   IDM_VIDEOTYPES_MESSAGING
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Reset",                       IDM_RESET
+        MENUITEM "About",                       IDM_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Sair",                        IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_MENUBAR RCDATA 
+BEGIN
+    0x0069, 0x0002, 0xfffe, 0x0068, 0x0004, 0x0010, 0x0191, 0x0000, 0xffff, 
+    0xfffe, 0x0069, 0x0004, 0x0018, 0x0192, 0x0000, 0x0000
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.\0"
+END
+
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAINDLG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 112
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_START               "Start"
+    IDS_MENU                "Menu"
+    IDS_CAPTION             "CECamera"
+    IDS_ABOUT               "CECamera Version 1.0\n\nSimple SDK sample for SHCameraCapture."
+    IDS_NOERROR             "The picture or video has been successfully captured and saved to:\n\n%s"
+    IDS_ERROR_INVALIDARG    "The argument specified is not valid!"
+    IDS_ERROR_OUTOFMEMORY   "There is not enough memory to capture the picture or video!"
+    IDS_ERROR_UNKNOWN       "An unknown error 0x%08X occurred!"
+    IDS_ERROR_CAMERADISABLED "Camera is disabled!"
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

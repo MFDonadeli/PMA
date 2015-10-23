@@ -1,0 +1,11 @@
+; exec_aplic.def : Declares the module parameters for the DLL.
+
+LIBRARY      "exec_aplic"
+
+EXPORTS
+    ; Explicit exports can go here
+	_Load			@1
+	_Unload			@2
+	_Run			@3
+	_GetIcon		@4
+	_ShowWindows	@5

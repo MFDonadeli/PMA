@@ -1,0 +1,226 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Modules.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Modules.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Modules.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG  0, 0, 125, 154
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,26,50,14
+END
+
+IDD_PAGE_IMPRESSAO_SIMPLES DIALOG  0, 0, 162, 152
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Imprimir",IDC_PAGE_IMP_BTN_PRINT,16,75,128,14
+    COMBOBOX        IDC_COMBO1,16,29,128,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Impressora Atual:",IDC_LABEL_SEL_IMPR,16,20,126,8
+    PUSHBUTTON      "Sair sem Imprimir",IDC_PROSSEGUIR,16,91,128,14
+    PUSHBUTTON      "Configuração de Impressoras",IDC_BUTTON_CONFIGURAR,16,47,128,14
+END
+
+IDD_PAGE_IMPRESSAO DIALOG  0, 0, 162, 152
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Imprimir",IDC_PAGE_IMP_BTN_PRINT,16,107,128,14
+    PUSHBUTTON      "Localizar Impressora",IDC_PAGE_IMP_BTN_LOC,16,87,128,14
+    COMBOBOX        IDC_COMBO1,16,29,128,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Impressora Atual:",IDC_LABEL_SEL_IMPR,16,20,126,8
+    PUSHBUTTON      "Continuar",IDC_PROSSEGUIR,16,127,128,14
+    PUSHBUTTON      "Definir impressora atual como padrão",IDC_BUTTON_DEFINIR,16,47,128,14
+    PUSHBUTTON      "Excluir impressora atual",IDC_BUTTON_EXCLUIR,16,67,128,14
+END
+
+IDD_BLUETOOTH_SEARCH DIALOG  0, 0, 153, 146
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Incluir Impressora",IDC_BUTTON_1,45,116,70,14
+    PUSHBUTTON      "Procurar",IDC_BUTTON_0,7,116,35,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,26,139,86
+    PUSHBUTTON      "Sair",IDC_BUTTON_OK,118,116,28,14
+END
+
+IDD_GET_PIN DIALOG  0, 0, 156, 109
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_PIN,32,26,91,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_PIN_CONF,32,60,91,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "PIN da Impressora:",IDC_STATIC,35,13,88,8
+    LTEXT           "Confirmação do PIN:",IDC_STATIC,31,50,91,8
+    PUSHBUTTON      "Confirmar",IDC_BUTTON1,90,85,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPRESSORA_EXCLUIDA "Impressora exluida!"
+    IDS_IMPRESSORA_N_EXCLUIDA "Erro ao excluir impressora!"
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Modules.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

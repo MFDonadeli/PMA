@@ -1,0 +1,411 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HEADER              BITMAP                  "res\\menu_header.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)\r\n"
+    "LANGUAGE 22, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Data_Hora.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Data_Hora.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Data_Hora.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG  0, 0, 156, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_PAGE1_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,37,70,116,13,WS_EX_STATICEDGE
+    CONTROL         "",IDC_PAGE1_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,37,85,116,13,WS_EX_STATICEDGE
+    LTEXT           "Data",IDC_STATIC,3,71,16,8
+    LTEXT           "Hora",IDC_STATIC,3,86,16,8
+    CTEXT           "Escolha a nova data e hora para o equipamento e o motivo da alteração. Lembre-se que este procedimento é de vital importância para o sistema e toda a alteração será monitorada.",IDC_STATIC,7,18,140,40
+    EDITTEXT        IDC_EDT_AGENTE,37,100,116,27,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "Motivo",IDC_STATIC,4,104,22,8
+END
+
+IDD_DLG_SENHA DIALOG  0, 0, 156, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Senha Atual",-1,7,41,40,8
+    EDITTEXT        IDC_TXT_ANTIGA,7,50,140,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Senha Nova",-1,7,65,40,8
+    EDITTEXT        IDC_TXT_NOVA,7,76,140,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Confirmação senha nova",-1,7,91,80,8
+    EDITTEXT        IDC_TXT_CONFIRMA,7,101,140,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CTEXT           "Preencha todos os campos e escolha Alterar para trocar sua senha",-1,7,21,140,16
+END
+
+IDD_DLG_PRINTERS DIALOG  0, 0, 156, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CTEXT           "Escolha a impressora padrão",-1,7,21,139,11
+    CONTROL         "",IDC_LIST_PRINTERS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,35,139,86
+END
+
+IDD_DLG_DRAW DIALOG  0, 0, 156, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+END
+
+IDD_GET_PIN DIALOG  0, 0, 156, 109
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_PIN,32,26,91,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_PIN_CONF,32,60,91,14,ES_PASSWORD | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "PIN da Impressora:",IDC_STATIC,35,13,88,8
+    LTEXT           "Confirmação do PIN:",IDC_STATIC,31,50,91,8
+    PUSHBUTTON      "Confirmar",IDC_BUTTON1,90,85,50,14
+END
+
+IDD_BLUETOOTH_SEARCH DIALOG  0, 0, 153, 146
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Incluir Impressora",IDC_BUTTON_1,45,116,70,14
+    PUSHBUTTON      "Procurar",IDC_BUTTON_0,7,116,35,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,26,139,86
+    PUSHBUTTON      "Sair",IDC_BUTTON_OK,118,116,28,14
+END
+
+IDD_PAGE_IMPRESSAO DIALOG  0, 0, 162, 152
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Imprimir",IDC_PAGE_IMP_BTN_PRINT,16,107,128,14
+    PUSHBUTTON      "Localizar Impressora",IDC_PAGE_IMP_BTN_LOC,16,87,128,14
+    COMBOBOX        IDC_COMBO1,16,29,128,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Impressora Atual:",IDC_LABEL_SEL_IMPR,16,20,126,8
+    PUSHBUTTON      "Continuar",IDC_PROSSEGUIR,16,127,128,14
+    PUSHBUTTON      "Definir impressora atual como padrão",IDC_BUTTON_DEFINIR,16,47,128,14
+    PUSHBUTTON      "Excluir impressora atual",IDC_BUTTON_EXCLUIR,16,67,128,14
+END
+
+IDD_DLGWIRELESS DIALOG  0, 0, 158, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Tipo de conexão a internet: ",IDC_STATIC,7,18,92,8
+    LTEXT           "",IDC_LBL_CONEXAO,99,18,50,8
+    PUSHBUTTON      "Desconectar Internet",IDC_BTN_CONEXAO,7,31,82,14
+    GROUPBOX        "Celular",IDC_STATIC,7,46,144,46
+    GROUPBOX        "WI-FI",IDC_STATIC,7,94,144,40
+    LTEXT           "Operadora:",IDC_STATIC,10,55,38,8
+    LTEXT           "Nível de Sinal:",IDC_STATIC,10,64,46,8
+    PUSHBUTTON      "Configurar Conexão Celular",IDC_BTN_CONFIGURAR,9,74,106,14
+    LTEXT           "Situação:",IDC_STATIC,10,103,31,8
+    PUSHBUTTON      "Ligar Wi-Fi",IDC_BTN_CONECTAR_WIFI,9,113,47,14
+    PUSHBUTTON      "Configurar Wi-Fi",IDC_BTN_CONFIGURAR_WIFI,66,113,64,14
+    LTEXT           "",IDC_LBL_OPERADORA,50,54,73,8
+    LTEXT           "",IDC_LBL_SINAL,57,64,53,8
+    LTEXT           "",IDC_LBL_SITUACAO,42,103,100,8
+END
+
+IDD_PAGE_IMPRESSAO_SIMPLES DIALOG  0, 0, 162, 152
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Imprimir",IDC_PAGE_IMP_BTN_PRINT,16,75,128,14
+    COMBOBOX        IDC_COMBO1,16,29,128,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Impressora Atual:",IDC_LABEL_SEL_IMPR,16,20,126,8
+    PUSHBUTTON      "Sair sem Imprimir",IDC_PROSSEGUIR,16,91,128,14
+    PUSHBUTTON      "Configuração de Impressoras",IDC_BUTTON_CONFIGURAR,16,47,128,14
+END
+
+IDD_DLG_MSG DIALOG  0, 0, 158, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Todos",IDC_BNTODOS,7,7,42,14
+    PUSHBUTTON      "Equpto.",IDC_BNEQUIP,107,7,44,14
+    PUSHBUTTON      "Agente",IDC_BNAGENTE,56,7,44,14
+    EDITTEXT        IDC_MSG,7,102,144,57,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_GRID,7,14,144,72,ES_AUTOHSCROLL | NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DLG_SENHA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DLG_PRINTERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DLG_DRAW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_GET_PIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 152
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_BLUETOOTH_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_PAGE_IMPRESSAO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_PAGE_IMPRESSAO_SIMPLES, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_DLG_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        VERTGUIDE, 49
+        VERTGUIDE, 56
+        VERTGUIDE, 100
+        VERTGUIDE, 107
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+        HORZGUIDE, 14
+        HORZGUIDE, 21
+        HORZGUIDE, 86
+        HORZGUIDE, 102
+        HORZGUIDE, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU2 MENU 
+BEGIN
+    MENUITEM "Alterar",                     32771
+    MENUITEM "Cancelar",                    IDCANCEL
+END
+
+IDR_MENU3 MENU 
+BEGIN
+    MENUITEM "Salvar",                      32772
+    MENUITEM "Cancelar",                    IDCANCEL
+END
+
+IDR_MENU4 MENU 
+BEGIN
+    MENUITEM "Sair",                        ID_SAIR
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Marcar como Lida",            ID_M_LIDA
+        MENUITEM "Marcar como não Lida",        ID_M_NLIDA
+        MENUITEM "Excluir Mensagem",            ID_M_EXCLUIR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\Graphic1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+IDI_ICON3               ICON                    "res\\icon3.ico"
+IDI_ICON4               ICON                    "res\\icon4.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFALTERA          "Este procedimento é de vital importância ao sistema. Toda a alteração de data e hora é monitorada. Tem certeza que deseja alterar?"
+    IDS_IMPRESSORA_PADRAO   "Escolha uma impressora para defini-la como padrão."
+    IDS_ERRO_IMPRESSORA_PADRAO 
+                            "Falha tentando colocar impressora como padrão."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPRESSORA_PADRAO_OK "Impressora definida com sucesso."
+    IDS_CONFIG_WIDCOMM      "Para configurar impressoras click em 'Configuração do Wireless'->'Menu'-> 'Configurações de Bluetooth'."
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+LANGUAGE 22, 1
+#pragma code_page(1252)
+#include "res\Data_Hora.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

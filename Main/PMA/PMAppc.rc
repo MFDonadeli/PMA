@@ -1,0 +1,300 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\PMAppc.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PMA.ico"
+IDI_FOLDER              ICON                    "res\\5.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAM_DIALOG DIALOG  0, 0, 156, 129
+STYLE DS_SETFONT | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+CAPTION "PMA"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,7,7,103,81
+END
+
+IDD_IDENTIFICACAO DIALOG  0, 0, 156, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Verifique se os dados abaixo estão corretos. Caso haja alguma irregularidade, favor entrar em contato com a central.",IDC_STATIC_CAPTION,7,22,141,36
+    LTEXT           "_NOME_",IDC_STATIC_NOME,13,70,130,8
+    LTEXT           "_CODIGO_",IDC_STATIC_CODIGO,13,87,130,8
+    LTEXT           "_ENTIDADE_",IDC_STATIC_ENTIDADE,13,105,130,8
+    LTEXT           "_DEFINICAO_",IDC_STATIC_DEFINICAO,13,123,130,8
+    GROUPBOX        "",IDC_STATIC_GP,7,57,141,88
+END
+
+IDD_ABOUT DIALOG  0, 0, 160, 184
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CTEXT           "Plataforma Móvel de Aplicativos",IDC_STATIC_TITLE,7,70,146,8
+    CTEXT           "_VERSION_",IDC_VERSION,7,84,146,8
+    CTEXT           "__COMP_INFO__",IDC_COMP_DATE,7,117,146,8
+    CTEXT           "http://www.engebras.com.br",IDC_LINK,7,132,146,8
+    CONTROL         139,IDC_STATIC_IMG,"Static",SS_BITMAP | NOT WS_VISIBLE,3,14,150,52
+    PUSHBUTTON      "OK",IDOK,53,150,50,14
+    CTEXT           "_CONTRATO_",IDC_CONTRATO,7,100,146,8
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | NOT WS_VISIBLE | WS_TABSTOP,7,165,146,18
+    CONTROL         "",IDC_TAB1,"SysTabControl32",TCS_BOTTOM,0,0,157,27
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.1.0.1"
+            VALUE "InternalName", "PMA.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "PMA.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.1.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PAM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_IDENTIFICACAO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    MENUITEM "Voltar",                      ID_VOLTAR
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "SPARE",                       ID_MENU_TESTE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACKGROUND          BITMAP                  "res\\back.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EXIT                ICON                    "res\\xp_delete.ico"
+IDI_BACK                ICON                    "res\\voltar.ico"
+IDI_UNKNOWN             ICON                    "res\\icon1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_OKCANCEL MENU 
+BEGIN
+    MENUITEM "  OK  ",                      IDOK
+    MENUITEM "Cancelar",                    IDCANCEL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_IMAGELIST           BITMAP                  "res\\img_list.bmp"
+IDB_MENU_HEADER         BITMAP                  "res\\menu_header.bmp"
+IDB_ABOUT               BITMAP                  "res\\about.bmp"
+IDB_IMAGELIST1          BITMAP                  "res\\imagelist1.bmp"
+IDB_IMAGELIST_G         BITMAP                  "res\\img_list_G.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_BACK                "Voltar"
+    IDS_MSGWND_ERROR        "Error criando WaitMsgWindow"
+    IDS_COMMANDBAR_ERROR    "Error criando CommandBar"
+    IDS_BACKUPTHREAD_START_ERROR "Erro iniciando processo de backup"
+    IDS_AGENTELOGADO        "Agente logado em outro equipamento. As multas serão canceladas."
+    IDS_ERROLOGIN           "Erro carregando módulo de login."
+    IDS_BACKUPERROR         "Erro na atualização backup. Transmita as autuações e encaminhe o equipamento para manutenção."
+    IDS_DATAATUALIZACAO     "A data atual é: %s\r\nA hora atual é: %s \r\nDentro da autuação não será possível alterá-los. Para corrigir dirija-se a um posto, conecte o equipamento a base de um computador com internet e clique em ATUALIZAR."
+    IDS_ERROMODULO          "Erro carregando módulo [%s]. Se o problema persistir reinicie o equipamento ou entre em contato com o suporte técnico."
+    IDS_ERRO_ATUALIZACAO    "Erro executando atualização, verifique se você está conectado a internet."
+    IDS_ERRO_BLUETOOTH      "Erro inicializando o bluetooth."
+    IDS_ERRO_APP            "Erro executando aplicativo."
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\PMAppc.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,6 @@
+; PocketZlib.def : Declares the module parameters for the DLL.
+
+LIBRARY      "PocketZlib"
+
+EXPORTS
+    ; Explicit exports can go here

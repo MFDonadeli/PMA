@@ -1,0 +1,9 @@
+; Viewer.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Viewer"
+
+EXPORTS
+	_Load			@1
+	_Unload			@2
+	_Run			@3
+	_GetIcon		@4
